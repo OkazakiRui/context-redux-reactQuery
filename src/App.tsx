@@ -1,7 +1,13 @@
 import { VFC } from 'react'
-import './App.css'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Layout } from './components/Layout'
 
-export const App: VFC = () => {
-  return <Layout>App</Layout>
+const App: VFC = () => {
+  return (
+    <BrowserRouter>
+      <Layout>App</Layout>
+    </BrowserRouter>
+  )
 }
+
+export default App
