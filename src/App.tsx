@@ -6,6 +6,7 @@ import { ReactQueryB } from 'components/ReactQueryB'
 import { StateProvider } from 'context/StateProvider'
 import { VFC } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Layout } from './components/Layout'
 
@@ -46,6 +47,7 @@ const App: VFC = () => {
           </Layout>
         </StateProvider>
       </BrowserRouter>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   )
 }
