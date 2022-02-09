@@ -35,3 +35,9 @@
 ### B 1 回
 
 1. レンダリングされた時に cache から data を参照している
+
+## ReduxToolKit
+
+### 考察
+
+1. useContext とは違い、default でレンダリングの最適化がされている。

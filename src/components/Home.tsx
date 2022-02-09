@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const Home: VFC = () => {
   return (
-    <div className="w-9/12 space-y-4">
+    <div className="w-9/12 space-y-4 py-8">
       <h2 className="font-bold text-2xl">各レンダリング回数</h2>
       <div className="space-y-2">
         <h3 className="font-bold text-xl">ClassicalFetch</h3>
@@ -73,6 +73,17 @@ export const Home: VFC = () => {
           </h4>
           <ol className="list-decimal px-8">
             <li>レンダリングされた時に cache から data を参照している</li>
+          </ol>
+        </div>
+        <div className="space-y-2">
+          <h3 className="font-bold text-xl">ReduxToolKit</h3>
+          <h4 className="font-bold text-l">
+            <Link to="/main-rtkit">考察</Link>
+          </h4>
+          <ol className="list-decimal px-8">
+            <li>
+              useContext とは違い、default でレンダリングの最適化がされている。
+            </li>
           </ol>
         </div>
       </div>
