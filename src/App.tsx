@@ -1,6 +1,7 @@
 import { ClassicalFetchA } from 'components/ClassicalFetchA'
 import { ClassicalFetchB } from 'components/ClassicalFetchB'
 import { Home } from 'components/Home'
+import { MainContext } from 'components/MainContext'
 import { ReactQueryA } from 'components/ReactQueryA'
 import { ReactQueryB } from 'components/ReactQueryB'
 import { StateProvider } from 'context/StateProvider'
@@ -42,6 +43,9 @@ const App: VFC = () => {
               </Route>
               <Route exact path="/query-b">
                 <ReactQueryB />
+              </Route>
+              <Route exact path="/main-context">
+                <MainContext />
               </Route>
             </Switch>
           </Layout>
