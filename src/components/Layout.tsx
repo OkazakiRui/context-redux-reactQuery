@@ -16,6 +16,12 @@ export const Layout: VFC<Props> = ({ children }) => {
                 className="text-sm text-gray-300 hover:bg-gray-700 px-3 py-2 rounded"
                 to="/"
               >
+                index
+              </Link>
+              <Link
+                className="text-sm text-gray-300 hover:bg-gray-700 px-3 py-2 rounded"
+                to="/query-a"
+              >
                 react-query
               </Link>
               <Link
