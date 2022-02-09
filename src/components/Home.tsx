@@ -34,8 +34,8 @@ export const Home: VFC = () => {
         <h3 className="font-bold text-xl">ReactQuery</h3>
         <h4 className="font-bold text-l">
           <Link to="/fetch-a">
-            コンポーネントA 2回 [初回 fetch → データは cache
-            で保つ。期限が切れると再 fetch]
+            コンポーネントA 2回 [初回 fetch → データは cache で保つ。staletime
+            の期限が切れると再 fetch]
           </Link>
         </h4>
         <ol className="list-decimal px-8">

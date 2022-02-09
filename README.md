@@ -2,7 +2,7 @@
 
 ## ClassicalFetch
 
-### A 4 回 更新するたび fetch される
+### A 4 回 [更新するたび fetch される]
 
 1. レンダリングされた時
 2. マウントされた時に useEffect で isLoading の state を変更している
@@ -15,7 +15,7 @@
 
 ## ReactQuery
 
-### A 2 回 初回 fetch → データは cache で保つ。期限が切れると再 fetch
+### A 2 回 [初回 fetch → データは cache で保つ。staletime の期限が切れると再 fetch]
 
 1. レンダリングされた時
 2. fetch の処理が終わった時
